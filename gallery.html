@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — Antoine Szatkownik</title>
+  <!-- Reuse your existing styles so it matches the home page -->
+  <link rel="stylesheet" media="all and (min-width: 1081px)" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style-print.css"/>
+  <link rel="stylesheet" media="all and (max-width: 1080px)" href="css/style_mobile.css" />
+  <link rel="shortcut icon" href="Images/Icon05.png"/>
+
+  <!-- Tiny page‑specific helpers (kept inline for simplicity) -->
+  <style>
+    .gallery-wrap { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+    .gallery-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    .gallery-grid a { text-decoration: none; }
+    .gallery-grid figure { margin: 0; }
+    .gallery-grid img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    .gallery-grid figcaption { margin-top: .5rem; font-size: .95rem; opacity: .8; }
+    @media (min-width: 900px){ .gallery-grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="column-header">
+      <p class="fade-in">Antoine Szatkownik</p>
+      <p class="screen">Interested in patterns<br>Machine Learning – Computational Biology</p>
+      <p class="print">Paris</p>
+    </div>
+    <div class="column-header">
+      <p class="screen">[<a href="mailto:szatkownik@lri.fr" target="_blank">szatkownik@lri.fr</a>]</p>
+      <p class="screen">[<a href="https://github.com/antoineszatkownik" target="_blank">Github</a>]</p>
+      <p class="screen">[<a href="https://scholar.google.com/citations?user=UmRH2XYAAAAJ&hl=fr&oi=ao" target="_blank">Google Scholar</a>]</p>
+      <p class="screen">[<a href="https://www.linkedin.com/in/antoine-szatkownik-a61067220/" target="_blank">Linkedin</a>]</p>
+      <p class="screen">[<a href="index.html">Home</a>] [<a href="gallery.html">Gallery</a>]</p>
+      <a class="print">October 30th 1997</a>
+      <a class="print">antoine.szatkownik@gmail.com</a>
+      <a class="print">www.github.com/antoineszatkownik/</a>
+    </div>
+  </header>
+
+  <main class="gallery-wrap">
+    <h1>Gallery</h1>
+    <p>Works in progress and sketches. Click an image to open it full size in a new tab. PDFs will open in the browser.</p>
+
+    <!-- Raw display of your first image -->
+    <div class="gallery-grid">
+      <a href="Images/gallery/Sans%20titre%2023-1.png" target="_blank" rel="noopener">
+        <figure>
+          <img src="Images/gallery/Sans%20titre%2023-1.png" alt="Sculpture project notes and wireframe mockup" />
+          <figcaption>Sculpture project — draft notes (PNG).</figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <!-- To add more items later, duplicate the <a><figure>…</figure></a> block above and change the paths. -->
+  </main>
+
+  <footer>
+    <div><p>Gallery</p></div>
+    <div><p>Design & code: <a href="https://www.milenelaforge.com/" target="_blank" rel="noopener">Milène Laforge</a></p></div>
+  </footer>
+</body>
+</html>
+
