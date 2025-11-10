@@ -1,0 +1,87 @@
+@media print{
+
+:root{
+  --page-width: 21cm;
+  --page-height: 29.7cm;
+  --page-margin: 0cm;
+  --color-black:black;  
+  --color-grey:#A9A9A9;  
+  --font-size:1rem;  
+  --font-size-small:0.857142857rem;  
+}
+
+@page{
+    size: a4;
+    padding: var(--page-margin);
+}
+
+.print{ display: block; }
+.screen{ display: none; }
+
+body{
+  font-family: 'JetBrainsMono-Light', sans-serif;
+  color:var(--color-black);
+  overflow-x: hidden;
+}
+
+html{
+    font-size: 10px;
+}
+
+
+@font-face { 
+    font-family: 'JetBrainsMono-Regular';
+    src: url('../Fontes/JetBrainsMono-Regular.ttf') format('truetype'),
+       url('../Fontes/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+@font-face { 
+    font-family: 'JetBrainsMono-Light';
+    src: url('../Fontes/JetBrainsMono-Light.ttf') format('truetype'),
+       url('../Fontes/JetBrainsMono-Light.woff2') format('woff2');
+}
+
+/*HEADER -----------------------------*/
+/*------------------------------------*/
+header a{
+  text-decoration: none;
+  color:var(--color-black);
+}
+
+header{
+  position:relative;
+  width:100%;
+  padding: 0.5cm;
+  top:0;
+  display:flex;
+  flex-direction:row;
+  border-bottom:1px solid var(--color-black);
+  height:auto;
+  gap: 1cm;
+
+}
+
+header div:nth-child(1) a{
+    font-size: 1.5rem;
+}
+
+/*MAIN -----------------------------*/
+/*------------------------------------*/
+
+main{
+  width:calc(100% - 1.5cm);
+  padding: 0.5cm 1cm 0.5cm 0.5cm;   
+}
+h1{
+
+}
+
+
+/*FOOTER -----------------------------*/
+/*------------------------------------*/
+
+footer{ display:none; }
+
+
+
+}

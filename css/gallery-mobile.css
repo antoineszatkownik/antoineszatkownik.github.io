@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+
+main{
+  padding:3vh 2vw;
+  max-width: 10vw;
+  min-height:calc(100% - 6vh - 82px - 16.5px - 2vh - 6vh);
+  border-right:1px solid var(--color-pink);
+  display:flex;
+  flex-direction:column;
+  position:fixed;
+}
+
+.ligne{
+  margin-bottom:8vh !important;
+}
+
+.ligne p{
+  display: none;
+}
+
+main .ligne figure{
+  display:flex;
+  flex-direction:column;
+  gap:2vw;
+}
+
+main .ligne .visuel{
+  height:auto;
+  width: 10vw;
+  position:relative;
+}
+
+main .ligne .visuel .miniature{
+  height:auto;
+  width: 100%;
+}
+
+main .ligne .visuel:hover .grande,
+main .ligne .visuel:focus .grande
+main .ligne .visuel:active .grande{
+  width:calc(86vw - 8vh);
+  height:calc(100% - 6vh - 82px - 16.5px - 2vh - 6vh);
+  top:calc(6vh + 82px);
+}
+
+}

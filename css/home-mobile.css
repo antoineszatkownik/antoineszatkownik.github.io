@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+
+
+
+main{
+	flex-direction: column;
+	width: calc(100% - 4vw);
+  	padding:3vh 2vw;
+
+}
+
+
+main div.colonne:nth-child(1),
+main div.colonne:nth-child(2),
+main div.colonne:nth-child(3) { 
+	width:100%; 
+	min-width:100%;   
+}
+
+main div.colonne .block .line .description.list {
+  	padding-left: 3.5vw;
+}
+
+.colonne.print{
+	display: none;
+}
+
+}

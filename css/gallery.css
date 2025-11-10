@@ -1,0 +1,68 @@
+main{
+  padding:3vh 2vw;
+  width: calc(50% - 4vw);
+  min-height:calc(100% - 6vh - 66px - 16.5px - 2vh - 6vh);
+  border-right:1px solid var(--color-pink);
+  display:flex;
+  flex-direction:column;
+  position:fixed;
+}
+
+main .ligne{
+  margin-bottom:4vh;
+}
+
+main .ligne p, main .ligne a{
+  margin-bottom:1vh;
+}
+
+main .ligne figure{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  gap:1vw;
+  overflow-x: scroll;
+}
+
+main .ligne .visuel{
+  height:5vw;
+  position:relative;
+}
+
+main .ligne .visuel .miniature{
+  height:95%;
+  max-height: 95%;
+}
+
+main .ligne .visuel .grande{
+  display:none;
+}
+
+main .ligne .visuel:hover{
+  cursor:pointer;
+}
+
+main .ligne .visuel:hover .grande{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-content: center;
+  padding:4vh;
+  position:fixed;
+  right:0;
+  width:calc(50% - 8vh);
+  height:calc(100% - 6vh - 66px - 16.5px - 2vh - 8vh);
+  top:calc(6vh + 66px);
+  z-index:110;
+}
+
+main .ligne .visuel .grande img{
+  max-height:100%;
+  max-width:100%;
+  object-fit: contain;
+}
+
+footer{
+  border-top:1px solid var(--color-pink);
+}
+

@@ -1,0 +1,94 @@
+@media print{
+
+:root{
+  --page-width: 21cm;
+  --page-height: 29.7cm;
+  --page-margin: 0cm;
+}
+
+:root {
+  --color-yellow:white;
+  --color-pink:black;  
+  --color-grey:#A9A9A9;  
+  --font-size:1rem;  
+  --font-size-small:0.857142857rem;  
+}
+
+
+@page{
+    size: a4;
+    padding: var(--page-margin);
+}
+
+
+.print{
+    display: block;
+}
+
+.screen{
+    display: none;
+}
+
+
+/*HEADER -----------------------------*/
+/*------------------------------------*/
+
+header div{
+  min-width: 50% !important;
+}
+
+/*MAIN -----------------------------*/
+/*------------------------------------*/
+main{
+    flex-direction: column;
+    width: calc(100% - 4vw);
+    padding:3vh 2vw;
+}
+
+main div.colonne:nth-child(1),
+main div.colonne:nth-child(2),
+main div.colonne:nth-child(3) { 
+    width:100%; 
+    min-width:100%;   
+}
+
+main div.colonne .block{
+    margin-bottom:2vh;
+}
+
+main div.colonne .line{
+    width: 80%;
+    margin-bottom:0;
+
+}
+
+.first{
+margin-bottom: 4vh;
+}
+
+
+main div.colonne:nth-child(2){
+  margin-top:5.5cm;
+}
+
+main div.colonne:nth-child(3) .block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main div.colonne:nth-child(3) .block .line{
+    width: 20%;
+}
+
+main div.colonne:nth-child(3) .block h1{
+    width: 100%;
+    min-width: 100%;
+}
+
+/*FOOTER -----------------------------*/
+/*------------------------------------*/
+
+footer{
+  display:none;
+}

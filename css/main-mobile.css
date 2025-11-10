@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+
+
+header{
+  height: 82px;
+}
+
+header div{
+  min-width: 50% !important;
+}
+
+main{
+  top:calc(6vh + 82px);
+}
+
+footer p{
+  margin-right:3vw;
+}
+
+footer p:nth-last-child(1){
+  margin-right:0;
+}
+
+
+.legal{
+  position: absolute;
+  right: -70vw;
+  width: 70vw;
+
+}
+
+}

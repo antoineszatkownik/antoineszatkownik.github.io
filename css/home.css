@@ -1,0 +1,95 @@
+main{
+	width:calc(100% - 12vw);
+  padding:3vh 2vw;
+  display:flex;
+  flex-direction:row;
+  gap:4vw;
+}
+
+main div.colonne{
+	display:flex;
+	flex-direction:column;
+}
+
+
+main div.colonne .block{
+	display:flex;
+	flex-direction: column;
+	margin-bottom:4vh;
+}
+
+h1{
+	font-size:var(--font-size);
+	border-bottom:1px solid var(--color-pink);
+	padding-bottom:5px;
+	margin-bottom:10px;
+}
+
+main div.colonne .block .line{
+	display:flex;
+	flex-direction:row;
+	gap:1vw;
+	margin-bottom:2vh;
+}
+
+main div.colonne .block:nth-last-child(1),
+main div.colonne .block .line:nth-last-child(1){
+	margin-bottom:1vh;
+}
+
+main div.colonne .block .line p.date{
+  	width:30%;
+   	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: clip;
+}
+
+main div.colonne .block .line .description {
+  	width:100%;
+}
+
+
+main div.colonne .block .line .description.list {
+  	list-style: outside;
+  	list-style-type: "– ";
+  	padding-left: 1vw;
+  	margin-bottom: 2vh;
+}
+
+main div.colonne .block .line .description.list p {
+    text-decoration: underline 1px var(--color-pink);
+    text-underline-position: under;
+    margin-bottom: 2vh;
+}
+
+main div.colonne .block .line .description.list li {
+  	margin-bottom: 1vh;
+}
+
+
+main div.colonne:nth-child(3) .block .line{
+	margin-bottom:2vh !important;
+}
+
+main div.colonne .block .line .description em a {
+	color:inherit;
+	text-decoration-thickness: 0.75px ;
+}
+
+main div.colonne .block .line .description em a:hover {
+	background-color: var(--color-pink) ;
+	cursor:pointer;
+	color:var(--color-yellow);
+	text-decoration:none;
+}
+
+main div.colonne:nth-child(2) .block .line,
+main div.colonne:nth-child(3) .block .line{
+	margin-bottom:6vh;
+}
+
+
+.colonne.print{
+	display: none;
+}
+

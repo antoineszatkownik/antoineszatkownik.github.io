@@ -1,0 +1,96 @@
+main{
+	display:flex;
+	flex-direction:column;
+}
+
+main h1{
+	font-size: 1.5rem ;
+	border-bottom:1px solid var(--color-black);
+	padding-bottom:0.07cm;
+	margin-bottom:0.25cm;
+	font-weight: normal;
+
+}
+
+.line{
+	display: flex;
+	flex-direction: row;
+	gap:  0.25cm;
+	transform: translateY(-0.25cm);
+	margin-bottom: -0.25cm;
+	padding: 0;
+}
+
+.line .date{
+	min-width: 2cm;
+	width: 2cm;
+	max-width: 2cm;
+}
+
+.line .description{
+	width: 78%;
+}
+
+.line .description strong{
+	font-size: 1.25rem ;
+}
+
+
+main .colonne:nth-child(2){
+	position: relative;
+	page-break-after: auto;
+	padding-bottom: 1cm ;
+}
+
+main .colonne:nth-child(2) .block p {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	width: 88%;
+}
+
+
+main .colonne:nth-child(2) .block p a {
+	text-decoration: none;
+	color: blue;
+	font-style: normal;
+	font-weight: bold;
+}
+
+main .colonne:nth-child(2) .small{
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	transform: translateY(0.07cm);
+	width: fit-content;
+}
+
+main .colonne:nth-child(3){
+	position: relative;
+	margin-top: 0.75cm;
+}
+
+main .colonne:nth-child(3) .line{
+	margin-bottom: 0.2cm;
+}
+
+main .colonne:nth-child(3) ul{
+	padding: 0;
+	padding-left: 0.3cm;
+	margin: 0;
+}
+
+
+main .colonne:nth-child(4) .line .description{
+	width: 95%;
+}
+
+main .colonne:nth-child(4) .line .description strong{
+	font-size: 1rem ;
+}
+
+
+
+
+
+
